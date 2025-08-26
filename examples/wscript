@@ -1,0 +1,5 @@
+def build(bld):
+    obj = bld.create_ns3_program('tesla-topology-example',
+                                ['tesla', 'core', 'network', 'internet',
+                                 'applications', 'point-to-point', 'csma', 'mobility'])
+    obj.source = 'tesla-topology-example.cc'
